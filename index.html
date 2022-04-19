@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--HEAD, LINKS-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generador de Claves">
+    <title>Generador de Claves</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!--Body-->
+
+    <body id="body">
+        <!--título y subtítulo-->
+        <div class="title">
+            <h1 class="h1">Your best security</h1>
+            <h2 class="h2">Password</h2>
+            <h3 class="h3">On this page you can get the perfect combination to create your password</h3>
+        </div>
+
+        <!--CARD ENTERA-->
+        <div class="container">
+            <!--PARTE DE OPCIONES-->
+            <div class="boxoptions">
+                <form class="form" id="passwordGeneratorForm">
+                    <legend class="subtitle" id="subtitle"> Personalize your password </legend>
+
+                    <div class="options">
+                        <div class="option1">
+                            <p class="p">Length</p>
+                            <div class="items">
+                                <label class="label">12 characters <input id="amountCharacters12" class="radio" type="radio" name="Length"></label>
+                                <label class="label">9 characters <input id="amountCharacters9" class="radio" type="radio" name="Length"></label>
+                                <label class="label">6 characters <input id="amountCharacters6" class="radio" type="radio" name="Length"></label>
+                            </div>
+                        </div>
+
+
+                        <div class="option2">
+                            <p class="p">Rules</p>
+                            <div class="items">
+                                <label class="label">Only letters <input id="onlyLetters" class="radio" type="radio" name="Rules"></label>
+                                <label class="label">Simple reading <input id="SimpleReading" class="radio" type="radio" name="Rules"></label>
+                                <label class="label">All characters <input id="AllCharacters" class="radio" type="radio" name="Rules"></label>
+                            </div>
+                        </div>
+
+
+                        <div class="option3">
+                            <p class="p" id="allChar">Characteristics</p>
+                            <div class="items">
+                                <label class="label">CAPITAL <input id="Capital" class="Characteristics" type="checkbox" name="Characteristics"></label>
+                                <label class="label">LowerCase <input id="LowerCase" class="Characteristics" type="checkbox" name="Characteristics"></label>
+                                <label class="label">Numbers <input id="Numbers" class="Characteristics" type="checkbox" name="Characteristics"></label>
+                                <label class="label">Symbols <input id="Symbols" class="Characteristics" type="checkbox" name="Characteristics"></label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <!-- DONDE APARECE CONTRASEÑA-->
+            <div class="passw" type="text" placeholder="Your password" id="password">
+                <div class="btncr">
+                    <button class="btnCopy" id="btnCopy" onclick="copy()"><img src="imagenes/copy.png"></button>
+                    <button class="btnReset" id="btnReset" onclick="reset()"><img src="imagenes/reset.png"></button>
+                </div>
+            </div>
+            <!--botón para generar contraseña-->
+
+            <button id="btnG" class="btng" onclick="genPassword()">Generate</button>
+
+
+
+
+        </div>
+        </div>
+
+
+        </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+        <!--vinculacion con js-->
+        <script src="index.js"></script>
+    </body>
+    <!--footer-->
+    <footer>
+        <div>
+            <p>By Nazaret Basaldella</p>
+        </div>
+    </footer>
+
+</html>
